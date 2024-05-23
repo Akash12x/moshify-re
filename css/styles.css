@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -298,6 +300,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -562,6 +565,9 @@ a {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
+  .callout-signup {
+    transform: translateY(5rem);
+  }
 }
 
 /* Collapsible */
@@ -621,7 +627,7 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
 .block--skewed-left {
@@ -734,8 +740,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -842,6 +849,7 @@ a {
 }
 
 .footer__copyright {
+  margin-bottom: 0;
   font-size: 2.1rem;
   color: #fff;
   opacity: 0.3;
