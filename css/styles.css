@@ -335,6 +335,14 @@ a {
   background-color: var(--color-secondary);
 }
 
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+.card--primary .badge--primary {
+  background: rgb(16, 91, 167);
+}
+
 /* Plans */
 
 .plan {
